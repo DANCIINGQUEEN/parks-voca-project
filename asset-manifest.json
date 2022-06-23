@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/parks-voca-project/static/css/main.8c5f9c23.css",
+    "main.js": "/parks-voca-project/static/js/main.0d1f267d.js",
+    "index.html": "/parks-voca-project/index.html",
+    "main.8c5f9c23.css.map": "/parks-voca-project/static/css/main.8c5f9c23.css.map",
+    "main.0d1f267d.js.map": "/parks-voca-project/static/js/main.0d1f267d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c5f9c23.css",
+    "static/js/main.0d1f267d.js"
+  ]
+}
