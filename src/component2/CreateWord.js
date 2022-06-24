@@ -2,7 +2,7 @@ import useFetch from "../hooks/useFetch";
 import {useRef, useState} from "react"
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 export default function CreateWord(){
-    const days=useFetch("http://localhost:3001/days")
+    const days=useFetch("https://my-json-server.typicode.com/DANCIINGQUEEN/data/days")
     const history=useHistory()
     const [isLoading, setIsLoading] =useState(false)
     function onSubmit(e){
@@ -12,7 +12,7 @@ export default function CreateWord(){
         console.log(dayRef.current.value);
         if(!isLoading){
             setIsLoading(true)
-            fetch(`http://localhost:3001/words/`,{
+            fetch(`https://my-json-server.typicode.com/DANCIINGQUEEN/data/words/`,{
                 method:'POST',
                 headers:{'Content-Type':'application/json'},
                 body:JSON.stringify({

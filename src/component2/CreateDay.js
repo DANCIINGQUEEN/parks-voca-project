@@ -1,10 +1,10 @@
 import useFetch from "../hooks/useFetch"
 import { useHistory } from "react-router-dom"
 export default function CreateDay() {
-    const days=useFetch("http://localhost:3001/days")
+    const days=useFetch("https://my-json-server.typicode.com/DANCIINGQUEEN/data/days")
     const history=useHistory()
     function addDay(){
-        fetch(`http://localhost:3001/days/`,{
+        fetch(`https://my-json-server.typicode.com/DANCIINGQUEEN/data/days/`,{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({

@@ -20,7 +20,7 @@ export default function DayList(){
     //     console.log(" count change");
     // },[])
 
-    const days=useFetch("http://localhost:3001/days")
+    const days=useFetch("https://my-json-server.typicode.com/DANCIINGQUEEN/data/days")
 
     if(days.length===0){
         return <span>Loading...</span>
